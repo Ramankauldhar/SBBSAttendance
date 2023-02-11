@@ -6,13 +6,6 @@
     background-color: rgb(190, 195, 240);
 }
 
-.mainHeading{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: navy;
-    display: inline;
-    margin: 30px;
-    font-size: 5vw;
-}
 .error{
     background: rgb(228, 146, 143);
     padding: 10px;
@@ -61,7 +54,17 @@
     margin:2px;
 }
 
+.mainHeading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: navy;
+    display: inline;
+    margin: 30px;
+    font-size: 5vw;
+}
 
+.textDanger{
+    color: red;
+}
 
 p{
     color: navy;
@@ -109,6 +112,38 @@ p{
     padding:5px 2px;
 }
 
+nav{
+    float: left;
+    width:25%;
+    height: 540px;
+    background:  rgb(134, 143, 230);
+    padding: 5px 2px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0px 5px;
+    font-size: 20px;
+    margin: 5px 0px;
+    overflow: hidden;
+}
+
+li{
+    padding: 2px;
+    margin: 5px 5px;
+}
+a{
+    text-decoration: none;
+    color: navy;;
+    font-size: 25px;
+    display: block;
+    background:  rgb(217, 219, 238);
+    height: 50px;
+}
+a:hover{
+    background-color: rgb(85, 99, 223);
+    color: black;
+}
 .home-container{
     float:left;
     width:75%;
