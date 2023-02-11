@@ -1,16 +1,8 @@
 
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <title>Teacher Attendance Portal</title>
-        <link rel="stylesheet" href="attendanceCSS.css">
-    </head>
+        <?php include 'header.php'; ?>
     <body>
-        <header class="header">
-            <h1 class="mainHeading"> <img class="sbbsLogo" src="./images/sbbsLogo.jpeg" alt="SBBS Logo"/>SBBS Online Attendance</h1>
-        </header>
+       <?php include 'logo.php'; ?>
         <section>
             <div class="leftPhoto">
                 <p>SBBS College</p>
@@ -34,9 +26,7 @@
 
         </section>
 
-        <footer class="footer">
-             <p>Follow us</p>
-             <p>Follow us</p>
-        </footer>
+        <?php include 'footer.php'; ?>
+
     </body>
 </html>
