@@ -16,6 +16,9 @@
                 <img class="tchrPic" src="./images/teacherImg.jpeg" alt="SBBS College"/>
 
                 <form method="post" id="logForm" action="login.php">
+                  <?php if(isset($_GET['error'])) {?> 
+                    <p class="errorText"><?php echo $_GET['error']; ?></p> </br>
+                    <?php } ?>
                   <label><b>Email:</b></label><br>
                   <input type="text" id="tEmail" name="tEmail" autofocus/><br><br>
                   <label><b>Password:</b></label><br>

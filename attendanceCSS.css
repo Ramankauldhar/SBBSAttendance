@@ -5,16 +5,18 @@
 .header{
     background-color: rgb(190, 195, 240);
 }
-
-.error{
-    background: rgb(228, 146, 143);
-    padding: 10px;
-    color :rgb(24, 23, 22);
-    width: 95%;
+.errorText{
+    background-color: rgb(212, 122, 142);
+    color:red;
+    width: 100%;
     border-radius: 5px;
-    margin: 20px auto;
 }
-
+.sucessText{
+    background-color: rgb(212, 122, 142);
+    color:red;
+    width: 100%;
+    border-radius: 5px;
+}
 .sbbsLogo{
     height: 80px;
     width: 80px;
@@ -60,10 +62,6 @@
     display: inline;
     margin: 30px;
     font-size: 5vw;
-}
-
-.textDanger{
-    color: red;
 }
 
 p{
@@ -170,7 +168,6 @@ section::after{
     cursor:pointer;
 }
 #submitButton:hover{
-    background-color: rgb(211, 210, 176);
     opacity:0.2;
 }
 footer{

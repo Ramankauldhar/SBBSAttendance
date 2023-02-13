@@ -1,6 +1,6 @@
 <?php
+  session_start();
   include 'dbConnection.php';
-
 
  if(isset($_POST['tEmail']) && isset($_POST['tPswd'])){
 
@@ -23,11 +23,11 @@
   }else{
     $query = $conn->query("SELECT * FROM users WHERE tEmail = '$tEmail' and tPass = '$tPswd'");
 
-    if($query->num_rows > 0){ 
+    if($query->num_rows >0){ 
         $row = $query->fetch_assoc();
         if($row['tEmail'] === $tEmail && $row['tPass'] === $tPswd ){
-            $SESSION['tEmail'] = $row['tEmail'];
-            $SESSION['id'] = $row['id'];
+            $_SESSION['tEmail'] = $row['tEmail'];
+            $_SESSION['id'] = $row['id'];
             header("Location: teacherHome.php");
             exit();
         }else{
