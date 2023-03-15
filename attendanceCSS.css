@@ -12,8 +12,8 @@
     border-radius: 5px;
 }
 .sucessText{
-    background-color: rgb(212, 122, 142);
-    color:red;
+    background-color: rgb(91, 173, 147);
+    color:green;
     width: 100%;
     border-radius: 5px;
 }
@@ -49,13 +49,6 @@
     padding:5px;
 }
 
-.subjPic{
-    height: 100px;
-    width: 100%;
-    padding:2px;
-    margin:2px;
-}
-
 .mainHeading{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: navy;
@@ -76,7 +69,7 @@ p{
     color: navy;
     font-style: bold;
     margin: 10px;
-    background-color:  rgb(190, 195, 240);;
+    background-color:  rgb(190, 195, 240);
 }
 
 .leftPhoto{
@@ -174,30 +167,53 @@ footer{
     background-color: khaki;
 }
 
-/* card CSS */
-.column{
-    float:left;
-    width:50%;
-    padding: 0 15px;
+.subjPic{
+    height: 100px;
+    width: 100%;
+    padding:2px;
 }
-.row{
-    margin: 0 -5px;
-}
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.card{
-    box-shadow: 0 4px 8px 0 rgb(0, 0,0,0.2);
-    padding: 16px;
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgba(205, 201, 235, 0.8);
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(226, 224, 241, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
     text-align: center;
-    background-color: rgb(217, 217, 243);
-    border: rgb(8, 8, 8);
+    width: 100%;
+  }
+
+.subjPic:hover{
+    height: 115px;
+    cursor: pointer;
 }
-.card:hover{
-    box-shadow: 0 8px 16px 0 rgb(0, 0,0,0.2);
-}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th{
+    background-color:  navy;
+    color: rgb(197, 202, 244);
+    padding: 10px;
+    margin: 2px;
+  }
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color:  rgb(197, 202, 244);
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
 
 /* ------input CSS------ */
 input[type=text], input[type=password]{
