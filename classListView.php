@@ -1,4 +1,10 @@
 <?php
+    session_start();
+    if(!isset($_SESSION["tEmail"]))
+    {
+       header('location:index.php');
+    }
+
     include 'dbConnection.php';
     $sql = "SELECT classId, className FROM classes";
     $result = $conn->query($sql);

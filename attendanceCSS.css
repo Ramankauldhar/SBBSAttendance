@@ -187,11 +187,13 @@ footer{
   }
 
 .subjPic:hover{
-    height: 115px;
+    height: 101px;
+    background-color: rgba(170, 162, 236, 0.8);
     cursor: pointer;
 }
 
 table {
+    padding-top: 20px;
     border-collapse: collapse;
     width: 100%;
   }

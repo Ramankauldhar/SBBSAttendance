@@ -1,8 +1,12 @@
 <?php
     session_start();
+    if(!isset($_SESSION["tEmail"]))
+    {
+       header('location:index.php');
+    }
     include 'dbConnection.php';
 
-    $sql = "SELECT subId, subName, subClass from subjects";
+    $sql = "SELECT subId, subName, subClass from subjects where subTeacher='{$_SESSION["tEmail"]}'";
     $result = $conn->query($sql);
 
     if($result->num_rows >0){
